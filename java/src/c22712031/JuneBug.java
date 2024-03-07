@@ -62,7 +62,7 @@ public class JuneBug extends PApplet {
     public void setup()
     {
         minim = new Minim(this);
-        ap = minim.loadFile("", 1000);
+        ap = minim.loadFile("java/data/JuneBug - The Grand Affair.mp3", 1000);
         ap.play();
         ab = ap.mix;
         colorMode(HSB);
@@ -102,8 +102,7 @@ public class JuneBug extends PApplet {
                 for(int c = 0; c < ab.size(); c++)
                 {
                     float hueC = map(ab.size(), 0, ab.size(), 0, 100);
-                    noStroke();
-                    fill(hueC, 255, 255);
+                    stroke(hueC, 255, 255);
                     circle(cy * 1.3f, smoothedAmplitude * cx * 0.9f, smoothedAmplitude * c * 2);
                 }
                 break;
