@@ -1,14 +1,12 @@
 package ie.tudublin;
 
-import example.CubeVisual;
-import example.MyVisual;
-import example.RotatingAudioBands;
+import c22712031.*;
 
 public class Main {
 
     public void startUI() {
         String[] a = { "MAIN" };
-        processing.core.PApplet.runSketch(a, new MyVisual());
+        processing.core.PApplet.runSketch(a, new JuneBug());
     }
 
     public static void main(String[] args) {

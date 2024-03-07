@@ -70,7 +70,7 @@ public class JuneBug extends PApplet {
         y = height / 2;
         smoothedY = y;
 
-        lerpedBuffer = new float(width);
+        lerpedBuffer = new float[width];
     }
 
     float off = 0;
@@ -99,12 +99,12 @@ public class JuneBug extends PApplet {
         {
             case 1:
                 background(0, 0, 0);
-                for(int c = 0; c < ab.size(); d++)
+                for(int c = 0; c < ab.size(); c++)
                 {
                     float hueC = map(ab.size(), 0, ab.size(), 0, 100);
                     noStroke();
                     fill(hueC, 255, 255);
-                    circle(cy * 1.3f, smoothedAmplitude * cy * 0.9f, smoothedAmplitude * c * 2);
+                    circle(cy * 1.3f, smoothedAmplitude * cx * 0.9f, smoothedAmplitude * c * 2);
                 }
                 break;
         }
