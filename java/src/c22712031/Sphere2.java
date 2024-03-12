@@ -20,15 +20,31 @@ public class Sphere2 {
         {
             ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
             ssv.pushMatrix();
-            //ssv.rotateX(PApplet.radians(rot));
+            ssv.rotateX(PApplet.radians(rot));
             //ssv.rotateY(PApplet.radians(rot));
-            ssv.rotateZ(PApplet.radians(rot));
+            //ssv.rotateZ(PApplet.radians(rot));
             ssv.fill(255, 255, 0);
-            float colour = PApplet.map(sp, 0, 3.9f, sp, 255);
+            float colour = PApplet.map(sp, 0, 3.9f, sp, 200);
             ssv.stroke(colour, 255, 255);
             ssv.strokeWeight(1);
             ssv.sphere(300 * ssv.smoothedAmplitude);
             ssv.triangle(500 * ssv.smoothedAmplitude, sp, sp, sp, sp, ssv.smoothedAmplitude * 600);
+            ssv.popMatrix();
+            rot += 100;
+        }
+
+        for(float sp2 = 0; sp2 < 7; sp2++)
+        {
+            ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
+            ssv.pushMatrix();
+            ssv.rotateX(PApplet.radians(rot));
+            //ssv.rotateY(PApplet.radians(rot));
+            //ssv.rotateZ(PApplet.radians(rot));
+            ssv.fill(255, 255, 0);
+            float colour = PApplet.map(sp2, 0, 3.9f, sp2, 200);
+            ssv.stroke(colour, 255, 255);
+            ssv.strokeWeight(1);
+            ssv.triangle(-500 * ssv.smoothedAmplitude, sp2, sp2, sp2, sp2, ssv.smoothedAmplitude * 600);
             ssv.popMatrix();
             rot += 100;
         }
