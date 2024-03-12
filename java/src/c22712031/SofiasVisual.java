@@ -11,9 +11,7 @@ public class SofiasVisual extends PApplet {
     Sphere sph;
     Sphere2 sph2;
     RadiantSpike rds;
-    RainbowSphere rbsph;
-
-    
+    SphereDimension sphd;
 
     Minim minim;
     AudioPlayer ap;
@@ -79,7 +77,7 @@ public class SofiasVisual extends PApplet {
     public void settings()
     {
         size(1000, 690, P3D);
-        //fullScreen(P3D, SPAN);
+        fullScreen(P3D, SPAN);
     }
     
     public void setup()
@@ -87,7 +85,7 @@ public class SofiasVisual extends PApplet {
         minim = new Minim(this);
         sph = new Sphere(this);
         sph2 = new Sphere2(this);
-        rbsph = new RainbowSphere(this);
+        sphd = new SphereDimension(this);
         rds = new RadiantSpike(this);
 
         ap = minim.loadFile("java/data/SpotMate.online - Tony Junior, BEAUZ - Rave Machine.mp3", 1000);
@@ -128,8 +126,6 @@ public class SofiasVisual extends PApplet {
             case 0:
                 background(0, 0, 0);
 
-                
-
                 /* 
                 for(int c = 0; c < ab.size(); c++)
                 {
@@ -148,8 +144,7 @@ public class SofiasVisual extends PApplet {
             case 1:
                 background(0, 0, 0);
                 sph.render();
-                
-        
+                  
                 /* 
                 for(int mc = 0; mc < ab.size(); mc++)
                 {
@@ -184,9 +179,7 @@ public class SofiasVisual extends PApplet {
 
             case 3:
                 background(0, 0, 0);
-                rbsph.render();
-                
-
+                sphd.render();
 
                 /* 
                 for(int l2 = 0; l2 < ab.size(); l2++)
