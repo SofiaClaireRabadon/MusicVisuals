@@ -28,6 +28,7 @@ public class Sphere2 {
             ssv.stroke(colour, 255, 255);
             ssv.strokeWeight(1);
             ssv.sphere(300 * ssv.smoothedAmplitude);
+            ssv.triangle(500 * ssv.smoothedAmplitude, sp, sp, sp, sp, ssv.smoothedAmplitude * 600);
             ssv.popMatrix();
             rot += 100;
         }
