@@ -21,13 +21,15 @@ public class Sphere {
             ssv.pushMatrix();
             //ssv.translate(100, height*0.30f, -900);
             //ssv.rotateX(PApplet.radians(rot));
-            ssv.rotateY(PApplet.radians(rot));
-            //ssv.rotateZ(PApplet.radians(rot));
+            //ssv.rotateY(PApplet.radians(rot));
+            ssv.rotateZ(PApplet.radians(rot));
             ssv.fill(60, 102, 40);
             float colour = PApplet.map(s, 0, 3.9f, s, 40);
             ssv.stroke(colour, 255, 255);
             ssv.strokeWeight(1);
             ssv.sphere(300 * ssv.smoothedAmplitude);
+            ssv.box(400 * ssv.smoothedAmplitude);
+            ssv.line(500 * ssv.smoothedAmplitude, s, s, ssv.smoothedAmplitude * 600);
             ssv.popMatrix();
             rot += 200;
         }   
