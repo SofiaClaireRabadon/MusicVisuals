@@ -10,7 +10,7 @@ public class SofiasVisual extends PApplet {
 
     SunSphere sunsph; // Visual 1
     SpinningTriangleSphere spinspin; // Visual 2
-    RadiantSpike rds; // Visual 3
+    RadiantSpikeMachine rdsm; // Visual 3
     SphereDimension sphd; // Visual 4
 
     Minim minim;
@@ -89,7 +89,7 @@ public class SofiasVisual extends PApplet {
         sunsph = new SunSphere(this);
         spinspin = new SpinningTriangleSphere(this);
         sphd = new SphereDimension(this);
-        rds = new RadiantSpike(this);
+        rdsm = new RadiantSpikeMachine(this);
 
         ap = minim.loadFile("java/data/SpotMate.online - Tony Junior, BEAUZ - Rave Machine.mp3", 1000);
         ap.play();
@@ -201,7 +201,7 @@ public class SofiasVisual extends PApplet {
 
             case 4:
                 background(0, 0, 0);
-                rds.render();
+                rdsm.render();
  
                 /* 
                 for(int l = 0; l < ab.size(); l++)
