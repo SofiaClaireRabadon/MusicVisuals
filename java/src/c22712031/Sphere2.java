@@ -24,7 +24,7 @@ public class Sphere2 {
             //ssv.rotateY(PApplet.radians(rot));
             //ssv.rotateZ(PApplet.radians(rot));
             ssv.fill(255, 255, 0);
-            float colour = PApplet.map(sp, 0, 3.9f, sp, 200);
+            float colour = PApplet.map(sp, 0, 3.9f, sp, 195);
             ssv.stroke(colour, 255, 255);
             ssv.strokeWeight(1);
             ssv.sphere(300 * ssv.smoothedAmplitude);
@@ -41,7 +41,7 @@ public class Sphere2 {
             //ssv.rotateY(PApplet.radians(rot));
             //ssv.rotateZ(PApplet.radians(rot));
             ssv.fill(255, 255, 0);
-            float colour = PApplet.map(sp2, 0, 3.9f, sp2, 200);
+            float colour = PApplet.map(sp2, 0, 3.9f, sp2, 195);
             ssv.stroke(colour, 255, 255);
             ssv.strokeWeight(1);
             ssv.triangle(-500 * ssv.smoothedAmplitude, sp2, sp2, sp2, sp2, ssv.smoothedAmplitude * 600);

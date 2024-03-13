@@ -8,7 +8,7 @@ import processing.core.PApplet;
 
 public class SofiasVisual extends PApplet {
 
-    Sphere sph;
+    SunSphere sunsph;
     Sphere2 sph2;
     RadiantSpike rds;
     SphereDimension sphd;
@@ -83,7 +83,7 @@ public class SofiasVisual extends PApplet {
     public void setup()
     {
         minim = new Minim(this);
-        sph = new Sphere(this);
+        sunsph = new SunSphere(this);
         sph2 = new Sphere2(this);
         sphd = new SphereDimension(this);
         rds = new RadiantSpike(this);
@@ -143,7 +143,7 @@ public class SofiasVisual extends PApplet {
 
             case 1:
                 background(0, 0, 0);
-                sph.render();
+                sunsph.render();
                   
                 /* 
                 for(int mc = 0; mc < ab.size(); mc++)
