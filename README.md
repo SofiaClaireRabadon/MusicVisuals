@@ -1,8 +1,8 @@
 # Music Visualiser Project
 
-Name:
+Name: Sofia Claire Rabadon
 
-Student Number: 
+Student Number: C22712031
 
 ## Instructions
 - Fork this repository and use it a starter project for your assignment
