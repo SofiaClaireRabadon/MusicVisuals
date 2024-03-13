@@ -9,7 +9,7 @@ import processing.core.PApplet;
 public class SofiasVisual extends PApplet {
 
     SunSphere sunsph; // Visual 1
-    Sphere2 sph2; // Visual 2
+    SpinningTriangleSphere spinspin; // Visual 2
     RadiantSpike rds; // Visual 3
     SphereDimension sphd; // Visual 4
 
@@ -87,7 +87,7 @@ public class SofiasVisual extends PApplet {
         minim = new Minim(this);
         
         sunsph = new SunSphere(this);
-        sph2 = new Sphere2(this);
+        spinspin = new SpinningTriangleSphere(this);
         sphd = new SphereDimension(this);
         rds = new RadiantSpike(this);
 
@@ -165,7 +165,7 @@ public class SofiasVisual extends PApplet {
 
             case 2:
                 background(0, 0, 0);
-                sph2.render();
+                spinspin.render();
                 
                 /*
                 for(int l = 0; l < ab.size(); l++)
