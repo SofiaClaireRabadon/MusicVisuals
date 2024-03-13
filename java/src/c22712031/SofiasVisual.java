@@ -28,7 +28,7 @@ public class SofiasVisual extends PApplet {
 
     public void keyPressed() {
         
-        if (key == ' ') // Pressing the SPACE key pauses the song
+        if (key == 'p') // Pressing the P key pauses the song
         {
             if(ap.isPlaying()) 
             {
@@ -36,10 +36,12 @@ public class SofiasVisual extends PApplet {
             }
         }
 
-        if(key == 'c') // Pressing the C key continues the song
+        else if(key == 'c') // Pressing the C key continues the song
         {
             ap.play();
         }
+
+
 
         if(key == 'r') // Pressing the R key replays the song from the beginning
         {
@@ -48,27 +50,27 @@ public class SofiasVisual extends PApplet {
         }
         
 
-        if(key == '0')
+        if(key == '0') // Nothing here at the moment
         {
             mode = 0;
         }
 
-        if(key == '1')
+        if(key == '1') // Pressing the 1 key displays Visual 1
         {
              mode = 1;
         }
 
-        if(key == '2')
+        if(key == '2') // Pressing the 2 key displays Visual 2
         {
             mode = 2;
         }
 
-        if(key == '3')
+        if(key == '3') // Pressing the 3 key displays Visual 3
         {
             mode = 3;
         }
 
-        if(key == '4')
+        if(key == '4') // Pressing the 4 key displays Visual 4
         {
             mode = 4;
         }
@@ -83,6 +85,7 @@ public class SofiasVisual extends PApplet {
     public void setup()
     {
         minim = new Minim(this);
+        
         sunsph = new SunSphere(this);
         sph2 = new Sphere2(this);
         sphd = new SphereDimension(this);
