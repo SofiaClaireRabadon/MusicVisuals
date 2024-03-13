@@ -8,10 +8,10 @@ import processing.core.PApplet;
 
 public class SofiasVisual extends PApplet {
 
-    SunSphere sunsph;
-    Sphere2 sph2;
-    RadiantSpike rds;
-    SphereDimension sphd;
+    SunSphere sunsph; // Visual 1
+    Sphere2 sph2; // Visual 2
+    RadiantSpike rds; // Visual 3
+    SphereDimension sphd; // Visual 4
 
     Minim minim;
     AudioPlayer ap;
@@ -140,7 +140,6 @@ public class SofiasVisual extends PApplet {
                 break;
 
 
-
             case 1:
                 background(0, 0, 0);
                 sunsph.render();
@@ -160,7 +159,7 @@ public class SofiasVisual extends PApplet {
                 
                 break;
 
-            
+
             case 2:
                 background(0, 0, 0);
                 sph2.render();
@@ -176,6 +175,7 @@ public class SofiasVisual extends PApplet {
                 }
                 */
                 break;
+
 
             case 3:
                 background(0, 0, 0);
@@ -194,6 +194,7 @@ public class SofiasVisual extends PApplet {
                 */
                 
                 break;
+
 
             case 4:
                 background(0, 0, 0);
@@ -235,7 +236,7 @@ public class SofiasVisual extends PApplet {
                     circle(cx , cy, smoothedAmplitude * mc * 1);
                 } 
                 */    
-                break;  
+                break;
         }
     }
 }
