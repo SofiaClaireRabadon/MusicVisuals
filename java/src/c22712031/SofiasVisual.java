@@ -129,8 +129,7 @@ public class SofiasVisual extends PApplet {
             case 0:
                 background(0, 0, 0);        
                 break;
-
-
+                
             case 1:
                 background(0, 0, 0);
                 sunsph.render();
