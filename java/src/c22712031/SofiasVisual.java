@@ -127,76 +127,25 @@ public class SofiasVisual extends PApplet {
         switch(mode)
         {
             case 0:
-                background(0, 0, 0);
-
-                /* 
-                for(int c = 0; c < ab.size(); c++)
-                {
-                    float hueC2 = map(ab.size(), 0, ab.size(), 0, 10);
-                    stroke(hueC2, 255, 255);
-                    strokeWeight(1);
-                    noFill();
-                    circle(cx * 0.5f, smoothedAmplitude * c * 1.5f, smoothedAmplitude * cy * 5);
-                }
-                */
-                
+                background(0, 0, 0);        
                 break;
 
 
             case 1:
                 background(0, 0, 0);
                 sunsph.render();
-
-                /*
-                for(int mc = 0; mc < ab.size(); mc++)
-                {
-                    float hueMC = map(mc, 0, ab.size(), 0, 256);
-                    //float m = map(smoothedAmplitude, 0, 0.5f, 100, 2000);
-                    stroke(hueMC, 255, 255);
-                    strokeWeight(3);
-                    noFill();
-                    //circle(cx, cy, smoothedAmplitude *  mc * 4);
-                    circle(cx, cy, smoothedAmplitude * mc * 1);
-                }
-                */
-                
-                
                 break;
 
 
             case 2:
                 background(0, 0, 0);
                 spinspin.render();
-                
-                /*
-                for(int l = 0; l < ab.size(); l++)
-                {
-                    float hueLI = map(l, 0, ab.size(), 0, 256);
-                    stroke(hueLI, 255, 255);
-                    strokeWeight(1);
-                    noFill();
-                    line(cx, cy, l, cy + ab.get(l) * cy);
-                }
-                */
                 break;
 
 
             case 3:
                 background(0, 0, 0);
-                sphd.render();
-
-                /* 
-                for(int l2 = 0; l2 < ab.size(); l2++)
-                {
-                    float hueLI = map(l2, 0, ab.size(), 0, 256);
-                    stroke(hueLI, 255, 255);
-                    strokeWeight(1);
-                    noFill();
-                    line(cx, cy, l2, cy + ab.get(l2) * cx * l2);
-                    line(cx, cy, l2, cy + ab.get(l2) * cx  * l2);
-                }
-                */
-                
+                sphd.render();    
                 break;
 
 
@@ -204,43 +153,6 @@ public class SofiasVisual extends PApplet {
                 background(0, 0, 0);
                 spinspin.render();
                 rdsm.render();
- 
-                /* 
-                for(int l = 0; l < ab.size(); l++)
-                {
-                    float hueLI = map(l, 0, ab.size(), 0, 256);
-                    stroke(hueLI, 255, 255);
-                    strokeWeight(1);
-                    noFill();
-                    line(cx, cy, l, cy + ab.get(l) * cy);
-                } 
-                */   
-                
-                /* 
-                for(int l2 = 0; l2 < ab.size(); l2++)
-                {
-                    float hueLI = map(l2, 0, ab.size(), 0, 256);
-                    stroke(hueLI, 255, 255);
-                    strokeWeight(1);
-                    noFill();
-                    line(cx, cy, l2, cy + ab.get(l2) * cx * l2);
-                    line(cx, cy, l2, cy + ab.get(l2) * cx  * l2);
-
-                } 
-                */  
-                
-                /*
-                for(int mc = 0; mc < ab.size(); mc++)
-                {
-                    float hueMC = map(mc, 0, ab.size(), 0, 185);
-                    //float m = map(smoothedAmplitude, 0, 0.5f, 100, 2000);
-                    stroke(hueMC, 255, 255);
-                    strokeWeight(3);
-                    noFill();
-                    //circle(cx, cy, smoothedAmplitude *  mc * 4);
-                    circle(cx , cy, smoothedAmplitude * mc * 1);
-                } 
-                */    
                 break;
         }
     }
