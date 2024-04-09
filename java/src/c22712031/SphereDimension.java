@@ -28,9 +28,9 @@ public class SphereDimension {
             ssv.rotateY(PApplet.radians(rot));
             ssv.rotateZ(PApplet.radians(rot));
             ssv.fill(0, 102, 0);
-            float colour = PApplet.map(c, 0, 9.5f, c, 256);
+            float colour = PApplet.map(c, 0, 9.5f, c, 155);
             ssv.stroke(colour, 255, 255);
-            ssv.strokeWeight(1);
+            ssv.strokeWeight(2);
             ssv.sphere(300 * ssv.smoothedAmplitude * c);
             ssv.popMatrix();
             rot += 1;       

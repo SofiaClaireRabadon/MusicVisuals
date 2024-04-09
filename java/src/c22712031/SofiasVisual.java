@@ -9,7 +9,7 @@ import processing.core.PApplet;
 public class SofiasVisual extends PApplet {
 
     SunSphere sunsph; // Visual 1
-    SpinningTriangleSphere spinspin; // Visual 2
+    Spinning spinspin; // Visual 2
     RadiantSpikeMachine rdsm; // Visual 3
     SphereDimension sphd; // Visual 4
 
@@ -87,7 +87,7 @@ public class SofiasVisual extends PApplet {
         minim = new Minim(this);
         
         sunsph = new SunSphere(this);
-        spinspin = new SpinningTriangleSphere(this);
+        spinspin = new Spinning(this);
         sphd = new SphereDimension(this);
         rdsm = new RadiantSpikeMachine(this);
 
@@ -121,8 +121,8 @@ public class SofiasVisual extends PApplet {
 
         smoothedAmplitude = lerp(smoothedAmplitude, average, 0.1f);
 
-        float cx = width / 2;
-        float cy = height / 2;
+        //float cx = width / 2;
+        //float cy = height / 2;
 
         switch(mode)
         {
@@ -146,8 +146,8 @@ public class SofiasVisual extends PApplet {
             case 1:
                 background(0, 0, 0);
                 sunsph.render();
-                  
-                /* 
+
+                /*
                 for(int mc = 0; mc < ab.size(); mc++)
                 {
                     float hueMC = map(mc, 0, ab.size(), 0, 256);
@@ -159,6 +159,7 @@ public class SofiasVisual extends PApplet {
                     circle(cx, cy, smoothedAmplitude * mc * 1);
                 }
                 */
+                
                 
                 break;
 
@@ -201,6 +202,7 @@ public class SofiasVisual extends PApplet {
 
             case 4:
                 background(0, 0, 0);
+                spinspin.render();
                 rdsm.render();
  
                 /* 
