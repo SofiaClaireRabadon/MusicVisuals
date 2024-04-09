@@ -91,7 +91,7 @@ public class SofiasVisual extends PApplet {
         sphd = new SphereDimension(this);
         rdsm = new RadiantSpikeMachine(this);
 
-        ap = minim.loadFile("java/data/SpotMate.online - Tony Junior, BEAUZ - Rave Machine.mp3", 1000);
+        ap = minim.loadFile("java/data/Rave Machine.mp3", 1000);
         ap.play();
         ab = ap.mix;
         colorMode(HSB);
