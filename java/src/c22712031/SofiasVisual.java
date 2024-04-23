@@ -50,29 +50,24 @@ public class SofiasVisual extends PApplet {
         }
         
 
-        if(key == '0') // Nothing here at the moment
+        if(key == '0') // Pressing the 0 key displays Visual 1
         {
             mode = 0;
         }
 
-        if(key == '1') // Pressing the 1 key displays Visual 1
+        if(key == '1') // Pressing the 1 key displays Visual 2
         {
              mode = 1;
         }
 
-        if(key == '2') // Pressing the 2 key displays Visual 2
+        if(key == '2') // Pressing the 2 key displays Visual 3
         {
             mode = 2;
         }
 
-        if(key == '3') // Pressing the 3 key displays Visual 3
+        if(key == '3') // Pressing the 3 key displays Visual 4
         {
             mode = 3;
-        }
-
-        if(key == '4') // Pressing the 4 key displays Visual 4
-        {
-            mode = 4;
         }
     }
 
@@ -127,31 +122,26 @@ public class SofiasVisual extends PApplet {
         switch(mode)
         {
             case 0:
-                background(0, 0, 0);        
+                background(0, 0, 0);  
+                sunsph.render();      
                 break;
                 
             case 1:
                 background(0, 0, 0);
-                sunsph.render();
+                spinspin.render();
                 break;
 
 
             case 2:
                 background(0, 0, 0);
-                spinspin.render();
+                sphd.render();
                 break;
 
 
             case 3:
                 background(0, 0, 0);
-                sphd.render();    
-                break;
-
-
-            case 4:
-                background(0, 0, 0);
-                spinspin.render();
-                rdsm.render();
+                spinspin.render(); 
+                rdsm.render();   
                 break;
         }
     }
