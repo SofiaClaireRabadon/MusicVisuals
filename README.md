@@ -1,9 +1,8 @@
 # Music Visualiser Project
 
-Name: Sofia Claire Rabadon
-
-Student Number: C22712031
-
+|-----------|-----------|
+|Name           | Sofia Claire Rabadon |
+|Student Number | C22712031            |
 
 # Description of the assignment
 
