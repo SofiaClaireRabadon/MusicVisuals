@@ -9,9 +9,9 @@
 
 # Instructions
 - Pressing the R key = To REWIND the whole song
-- Pressing the P key = To PAUSE the song while its still playing
+- Pressing the P key = To PAUSE the song 
 - Pressing the C key = To CONTINUE the song where it was last paused
-- Pressing 0-3 keys = Displays each different visuals based on how I interpret the song that I have chosen to do.
+- Pressing the 0, 1, 2, and 3 keys = Displays each different visual based on how I interpret the song.
 
 # How it works
 
