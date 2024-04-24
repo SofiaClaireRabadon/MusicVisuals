@@ -109,12 +109,12 @@ public class SofiasVisual extends PApplet {
         for(int i = 0; i < ab.size(); i++)
         {
             sum += abs(ab.get(i));
-            lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.02f);
+            lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.02f); 
         }
         
         average = sum / (float) ab.size();
 
-        smoothedAmplitude = lerp(smoothedAmplitude, average, 0.1f);
+        smoothedAmplitude = lerp(smoothedAmplitude, average, 0.1f); 
 
         //float cx = width / 2;
         //float cy = height / 2;
@@ -123,24 +123,25 @@ public class SofiasVisual extends PApplet {
         {
             case 0:
                 background(0, 0, 0);  
-                sunsph.render();      
+                sunsph.render(); // Visual 1     
                 break;
                 
             case 1:
                 background(0, 0, 0);
-                spinspin.render();
+                spinspin.render(); // Visual 2
                 break;
 
 
             case 2:
                 background(0, 0, 0);
-                sphd.render();
+                sphd.render(); // Visual 3
                 break;
 
 
             case 3:
                 background(0, 0, 0);
-                spinspin.render(); 
+                // Visual 2 and Visual 4 are combined here
+                spinspin.render();
                 rdsm.render();   
                 break;
         }
