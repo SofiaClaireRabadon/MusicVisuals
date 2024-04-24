@@ -139,10 +139,10 @@ public class SofiasVisual extends PApplet {
 
 
             case 3:
-                background(0, 0, 0);
                 // Visual 2 and Visual 4 are combined here
-                spinspin.render();
-                rdsm.render();   
+                background(0, 0, 0);
+                spinspin.render(); // Visual 2
+                rdsm.render(); // Visual 4
                 break;
         }
     }
