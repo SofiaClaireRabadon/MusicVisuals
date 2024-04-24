@@ -15,29 +15,8 @@ public class Spinning {
     }
 
     public void render()
-    {
-        /* 
-        for(float sp = 0; sp < 5; sp++)
-        {
-            ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
-            ssv.pushMatrix();
-            //ssv.rotateX(PApplet.radians(rot));
-            //ssv.rotateY(PApplet.radians(rot));
-            ssv.rotateZ(PApplet.radians(rot));
-            ssv.fill(255, 255, 0);
-            float colour = PApplet.map(sp, 0, 3.9f, sp, 100); 
-            ssv.stroke(colour, 255, 255);
-            ssv.strokeWeight(1);
-            ssv.box(300 * ssv.smoothedAmplitude);
-            ssv.sphere(100 * ssv.smoothedAmplitude);
-            ssv.popMatrix();
-            rot += 1;
-        }
-        */
+    {        
         
-        
-        
-
         for(float sp4 = 0; sp4 < 10; sp4++)
         {
             ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
@@ -71,7 +50,8 @@ public class Spinning {
             ssv.popMatrix();
             rot += 100;
         }
-
+        
+        
         for(float sp4 = 0; sp4 < 5; sp4++)
         {
             ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
@@ -87,6 +67,7 @@ public class Spinning {
             ssv.popMatrix();
             rot += 50;
         }
+        
         
 
         
@@ -105,6 +86,8 @@ public class Spinning {
             ssv.popMatrix();
             rot += 50;
         }
+        
+        
         
     }
 }
