@@ -22,7 +22,7 @@ public class SunSphere {
             //ssv.translate(100, height*0.30f, -900);
             //ssv.rotateX(PApplet.radians(rot));
             //ssv.rotateY(PApplet.radians(rot));
-            ssv.rotateZ(PApplet.radians(rot));
+            ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
             ssv.fill(60, 102, 40);
             float colour = PApplet.map(s, 0, 3.9f, s, 30);
             ssv.stroke(colour, 255, 255);

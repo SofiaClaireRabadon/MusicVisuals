@@ -24,9 +24,9 @@ public class SphereDimension {
             ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
             ssv.pushMatrix();
             //ssv.translate(100, height*0.30f, -900);
-            ssv.rotateX(PApplet.radians(rot));
-            ssv.rotateY(PApplet.radians(rot));
-            ssv.rotateZ(PApplet.radians(rot));
+            ssv.rotateX(PApplet.radians(rot)); // spins right and left
+            ssv.rotateY(PApplet.radians(rot)); // spins forward and backward
+            ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
             ssv.fill(0, 102, 0);
             float colour = PApplet.map(c, 0, 9.5f, c, 155);
             ssv.stroke(colour, 255, 255);

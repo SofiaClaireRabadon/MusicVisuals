@@ -44,7 +44,7 @@ public class Spinning {
             ssv.pushMatrix();
             //ssv.rotateX(PApplet.radians(rot));
             //ssv.rotateY(PApplet.radians(rot));
-            ssv.rotateZ(PApplet.radians(rot));
+            ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
             ssv.fill(255, 255, 0);
             float colour2 = PApplet.map(sp4, 0, 3.9f, sp4, 70);
             ssv.stroke(colour2, 255, 255);
@@ -62,7 +62,7 @@ public class Spinning {
             ssv.pushMatrix();
             //ssv.rotateX(PApplet.radians(rot));
             //ssv.rotateY(PApplet.radians(rot));
-            ssv.rotateZ(PApplet.radians(rot));
+            ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
             ssv.fill(255, 255, 0);
             float colour3 = PApplet.map(sp5, 0, 3.9f, sp5, 70);
             ssv.stroke(colour3, 255, 255);
@@ -78,7 +78,7 @@ public class Spinning {
             ssv.pushMatrix();
             //ssv.rotateX(PApplet.radians(rot));
             //ssv.rotateY(PApplet.radians(rot));
-            ssv.rotateZ(PApplet.radians(rot));
+            ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
             ssv.fill(255, 255, 0);
             float colour2 = PApplet.map(sp4, 0, 3.9f, sp4, 70);
             ssv.stroke(colour2, 255, 255);
@@ -96,7 +96,7 @@ public class Spinning {
             ssv.pushMatrix();
             //ssv.rotateX(PApplet.radians(rot));
             //ssv.rotateY(PApplet.radians(rot));
-            ssv.rotateZ(PApplet.radians(rot));
+            ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
             ssv.fill(255, 255, 0);
             float colour3 = PApplet.map(sp5, 0, 3.9f, sp5, 70);
             ssv.stroke(colour3, 255, 255);
