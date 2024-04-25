@@ -91,6 +91,9 @@ public void render()
 ```
 
 # What I am most proud of in the assignment
+What I am most proud of in the assignment is the 1st Visual (SunSphere) and the 4th Visual (RadiantSpikeMachine). 
+
+The 1st Visual relates to the lyrics at the beginning of the song. Since, the 4th Visual relates to the title of the song, I created a spiky looking machine with two tubes connecting to the machine, one at the top and one at the bottom. I also combined the 2nd Visual with the 4th Visual to make it look as if lights were beaming out of the machine.
 
 # Screenshots of the 4 Visuals
 
