@@ -23,4 +23,6 @@ I created 4 different visuals based on how I interpret the whole song including 
 
 # Music Visualization Youtube Video
 
+Youtube Link: https://youtu.be/q9dnLUhOlIg
+
 
