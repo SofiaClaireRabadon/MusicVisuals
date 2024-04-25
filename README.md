@@ -17,7 +17,11 @@ I created 4 different visuals based on how I interpret the whole song in relatio
 
 # How it works
 
-The 4 Visuals were created using only For Loops.
+The 4 Visuals were created using only For Loops. There are 4 classes which I implemented (in order of the song + visuals):
+#### SunSphere.java - Visual 1
+#### Spinning.java - Visual 2
+#### SphereDimension.java - Visual 3
+#### RadiantSpikeMachine.java - Visual 4
 
 ## Visual 1
 There is a mixture of 2D and 3D shapes which I implemented for the 1st Visual. 
