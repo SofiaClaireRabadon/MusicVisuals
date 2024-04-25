@@ -20,7 +20,17 @@ I created 4 different visuals based on how I interpret the whole song in relatio
 The 4 Visuals were created using only For Loops.
 
 ## Visual 1
-There is a mixture of 2D and 3D shapes which I implemented for the 1st Visual:
+There is a mixture of 2D and 3D shapes which I implemented for the 1st Visual. 
+As I mixed the 2D and 3D shapes, I created the sun because the lyrics mentioned 'sun', 'dawn', 'sunrise' and 'morning'. Both of the 2D and 3D shapes are rotating on the Z-axis.
+
+### Sphere
+The sphere represents the center of the sun.
+### Box
+The box rotates at the back of the sphere which it is shown on the outer part of the sphere.
+### Line
+The line that looks like a hexagon is actually the 2D shape line.
+### Triangle
+The triangle is the lines that is sticking out from the sphere.
 
 ```Java
 public void render()
