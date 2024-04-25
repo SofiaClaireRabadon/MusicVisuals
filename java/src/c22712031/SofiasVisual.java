@@ -89,6 +89,7 @@ public class SofiasVisual extends PApplet {
         ap = minim.loadFile("java/data/Rave Machine.mp3", 1000);
         ap.play();
         ab = ap.mix;
+        
         colorMode(HSB);
 
         y = height / 2;
