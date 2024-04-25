@@ -7,7 +7,7 @@
 # Description of the assignment
 The song I have chosen is called Rave Machine by Tony Junior and BEAUZ. The type of genre is Electronic and the style of the song is Happy Hardcore which means it is a Hardcore Dance Music. 
 
-I created 4 different visuals based on how I interpret the whole song including the lyrics. 
+I created 4 different visuals based on how I interpret the whole song in relation to the lyrics. 
 
 # Instructions
 - Pressing the R key = To REWIND the whole song
