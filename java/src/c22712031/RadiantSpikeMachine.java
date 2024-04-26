@@ -16,6 +16,7 @@ public class RadiantSpikeMachine {
 
     public void render()
     {
+        // THIS IS THE SPIKY MACHINE IN THE MIDDLE BETWEEN THE TWO MACHINE TUBES
         for(float b = 0; b < 100; b ++)
         {
             ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
@@ -33,6 +34,8 @@ public class RadiantSpikeMachine {
             rot += 10;    
         } 
 
+
+        // MACHINE TUBE CONNECTED AT THE TOP
         for(float b2 = 0; b2 < 100; b2 ++)
         {
             ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
@@ -50,6 +53,8 @@ public class RadiantSpikeMachine {
             rot += 10;    
         } 
 
+        
+        // MACHINE TUBE CONNECTED AT THE BOTTTOM
         for(float b3 = 0; b3 < 100; b3 ++)
         {
             ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
