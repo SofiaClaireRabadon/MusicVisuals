@@ -16,7 +16,7 @@ public class Spinning {
 
     public void render()
     {    
-        
+
         for(float sp4 = 0; sp4 < 10; sp4++)
         {
             ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
@@ -32,6 +32,7 @@ public class Spinning {
             ssv.popMatrix();
             rot += 100;
         }
+        
         
 
         
@@ -52,7 +53,7 @@ public class Spinning {
         }
         
         
-        
+  
         for(float sp4 = 0; sp4 < 5; sp4++)
         {
             ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
