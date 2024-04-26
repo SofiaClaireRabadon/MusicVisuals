@@ -34,8 +34,28 @@ public class RadiantSpikeMachine {
             rot += 10;    
         } 
 
-
+        
         // MACHINE TUBE CONNECTED AT THE TOP
+        for(float b3 = 0; b3 < 100; b3 ++)
+        {
+            ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
+            ssv.pushMatrix();
+            ssv.translate(-500, height * 0.9f, -999);
+            ssv.rotateX(PApplet.radians(rot)); // spins right and left
+            //ssv.rotateY(PApplet.radians(rot)); // spins forward and backward
+            //ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
+            ssv.fill(178, 0, 0);
+            float colour = PApplet.map(b3, 0, 9.5f, b3, 65);
+            ssv.stroke(colour, 255, 255);
+            ssv.strokeWeight(1);       
+            ssv.box(900 * ssv.smoothedAmplitude);
+            ssv.popMatrix();
+            rot += 10;    
+        } 
+          
+
+        
+        // MACHINE TUBE CONNECTED AT THE BOTTOM
         for(float b2 = 0; b2 < 100; b2 ++)
         {
             ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
@@ -52,24 +72,6 @@ public class RadiantSpikeMachine {
             ssv.popMatrix();
             rot += 10;    
         } 
-
         
-        // MACHINE TUBE CONNECTED AT THE BOTTTOM
-        for(float b3 = 0; b3 < 100; b3 ++)
-        {
-            ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
-            ssv.pushMatrix();
-            ssv.translate(-500, height * 0.9f, -999);
-            ssv.rotateX(PApplet.radians(rot)); // spins right and left
-            //ssv.rotateY(PApplet.radians(rot)); // spins forward and backward
-            //ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
-            ssv.fill(178, 0, 0);
-            float colour = PApplet.map(b3, 0, 9.5f, b3, 65);
-            ssv.stroke(colour, 255, 255);
-            ssv.strokeWeight(1);       
-            ssv.box(900 * ssv.smoothedAmplitude);
-            ssv.popMatrix();
-            rot += 10;    
-        }    
     }    
 }
