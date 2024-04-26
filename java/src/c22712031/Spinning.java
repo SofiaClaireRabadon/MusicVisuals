@@ -15,7 +15,7 @@ public class Spinning {
     }
 
     public void render()
-    {        
+    {    
         
         for(float sp4 = 0; sp4 < 10; sp4++)
         {
@@ -25,8 +25,8 @@ public class Spinning {
             //ssv.rotateY(PApplet.radians(rot));
             ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
             ssv.fill(255, 255, 0);
-            float colour2 = PApplet.map(sp4, 0, 3.9f, sp4, 70);
-            ssv.stroke(colour2, 255, 255);
+            float colour3 = PApplet.map(sp4, 0, 3.9f, sp4, 70);
+            ssv.stroke(colour3, 255, 255);
             ssv.strokeWeight(3);
             ssv.triangle(300 * ssv.smoothedAmplitude, sp4, sp4, sp4, sp4, ssv.smoothedAmplitude * 100);
             ssv.popMatrix();
@@ -43,13 +43,14 @@ public class Spinning {
             //ssv.rotateY(PApplet.radians(rot));
             ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
             ssv.fill(255, 255, 0);
-            float colour3 = PApplet.map(sp5, 0, 3.9f, sp5, 70);
-            ssv.stroke(colour3, 255, 255);
+            float colour4 = PApplet.map(sp5, 0, 3.9f, sp5, 70);
+            ssv.stroke(colour4, 255, 255);
             ssv.strokeWeight(3);
             ssv.triangle(-300 * ssv.smoothedAmplitude, sp5, sp5, sp5, sp5, ssv.smoothedAmplitude * 100);
             ssv.popMatrix();
             rot += 100;
         }
+        
         
         
         for(float sp4 = 0; sp4 < 5; sp4++)
@@ -60,8 +61,8 @@ public class Spinning {
             //ssv.rotateY(PApplet.radians(rot));
             ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
             ssv.fill(255, 255, 0);
-            float colour2 = PApplet.map(sp4, 0, 3.9f, sp4, 70);
-            ssv.stroke(colour2, 255, 255);
+            float colour5 = PApplet.map(sp4, 0, 3.9f, sp4, 70);
+            ssv.stroke(colour5, 255, 255);
             ssv.strokeWeight(3);
             ssv.triangle(600 * ssv.smoothedAmplitude, sp4, sp4, sp4, sp4, ssv.smoothedAmplitude * 100);
             ssv.popMatrix();
