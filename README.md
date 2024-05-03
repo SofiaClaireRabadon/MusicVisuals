@@ -140,7 +140,7 @@ public void render()
 
 ## Visual 3
 In the 3rd Visual, I had only used one 3D shape within a For Loop because it represents the buildup for the next drop of the song. As you can see from the For Loop from below, there are 5 spheres with different colours. The name of this visual is "Sphere
-Dimension" since its a space only containing spheres. After creating the "Sphere Dimension", it was influenced by the Russian Dolls where there is another doll decreasing in a smaller size inside another doll and so forth.
+Dimension" since its a space only containing spheres. The creation of the "Sphere Dimension" was influenced by the Russian Dolls where there is another doll decreasing in a smaller size inside another doll and so forth. Additionally, the 5 different colours of each sphere functions like the Russian Dolls.
 ```Java
 public void render()
 {
@@ -233,7 +233,7 @@ public void render()
 
 # What I am most proud of in the assignment
 What I am most proud of in the assignment is the 1st Visual (SunSphere) and the 4th Visual (RadiantSpikeMachine). 
-The 1st Visual relates to the lyrics at the beginning of the song. Since, the 4th Visual relates to the title of the song, I created a spiky looking machine with two tubes connecting to the machine, one at the top and one at the bottom. I also combined the 2nd Visual with the 4th Visual to make it look as if lights were beaming out of the machine.
+The 1st Visual relates to the lyrics at the beginning of the song. Since, the 4th Visual relates to the title of the song, I created a spiky looking machine with two tubes connecting to the machine, one at the top and one at the bottom. I also combined the 2nd Visual with the 4th Visual to make it look as if lights were beaming out of the machine. In the end, I enjoyed creating the Music Visuals based on the chosen song. 
 
 
 # Screenshots of the 4 Visuals
