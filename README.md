@@ -242,6 +242,6 @@ The 1st Visual relates to the lyrics at the beginning of the song. Since, the 4t
 
 Youtube Link: https://www.youtube.com/watch?v=q9dnLUhOlIg
 
-[![Image] (https://img.youtube.com/vi/q9dnLUhOlIg/MUSIC VISUALISER PROJECT.jpg)]
+[![Image] (http://img.youtube.com/vi/q9dnLUhOlIg/MUSICVISUALISERPROJECT.jpg)]
 
 
