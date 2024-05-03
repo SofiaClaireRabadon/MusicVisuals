@@ -4,10 +4,12 @@
 | -------------- | -------------------- |
 | C22712031 | Sofia Claire Rabadon |
 
+
 # Description of the assignment
 The song I have chosen is called Rave Machine by Tony Junior and BEAUZ. The type of genre is Electronic and the style of the song is Happy Hardcore which means it is a Hardcore Dance Music. 
 
 I created 4 different visuals based on how I interpret the whole song in relation to the lyrics as well as the mood and the tempo.
+
 
 # Instructions
 - Pressing the R key = To REWIND the whole song
@@ -15,13 +17,14 @@ I created 4 different visuals based on how I interpret the whole song in relatio
 - Pressing the C key = To CONTINUE the song where it was last paused
 - Pressing the 0, 1, 2, and 3 keys = Displays each different visual based on how I interpret the song.
 
-# How it works
 
+# How it works
 The 4 Visuals were created using only For Loops. There are 4 classes which I implemented (in order of the song + visuals):
 #### SunSphere.java - Visual 1
 #### Spinning.java - Visual 2
 #### SphereDimension.java - Visual 3
 #### RadiantSpikeMachine.java - Visual 4
+
 
 ## Visual 1
 There is a mixture of 2D and 3D shapes which I implemented for the 1st Visual. 
@@ -60,11 +63,84 @@ public void render()
     }   
 }
 ```
+
 ## Visual 2
+In the 2nd Visual, if you focus into the center for long, you can see there is an illusion of a circle. However, its the work of the triangles that are rotating on the Z-axis to make it look like it was spinning using the 2D shape circle.
 ```Java
+public void render()
+{    
+
+    for(float sp4 = 0; sp4 < 10; sp4++)
+    {
+        ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
+        ssv.pushMatrix();
+        //ssv.rotateX(PApplet.radians(rot));
+        //ssv.rotateY(PApplet.radians(rot));
+        ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
+        ssv.fill(255, 255, 0);
+        float colour3 = PApplet.map(sp4, 0, 3.9f, sp4, 70);
+        ssv.stroke(colour3, 255, 255);
+        ssv.strokeWeight(3);
+        ssv.triangle(300 * ssv.smoothedAmplitude, sp4, sp4, sp4, sp4, ssv.smoothedAmplitude * 100);
+        ssv.popMatrix();
+        rot += 100;
+    }
+
+
+    for(float sp5 = 0; sp5 < 10; sp5++)
+    {
+        ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
+        ssv.pushMatrix();
+        //ssv.rotateX(PApplet.radians(rot));
+        //ssv.rotateY(PApplet.radians(rot));
+        ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
+        ssv.fill(255, 255, 0);
+        float colour4 = PApplet.map(sp5, 0, 3.9f, sp5, 70);
+        ssv.stroke(colour4, 255, 255);
+        ssv.strokeWeight(3);
+        ssv.triangle(-300 * ssv.smoothedAmplitude, sp5, sp5, sp5, sp5, ssv.smoothedAmplitude * 100);
+        ssv.popMatrix();
+        rot += 100;
+    }
+
+
+    for(float sp4 = 0; sp4 < 5; sp4++)
+    {
+        ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
+        ssv.pushMatrix();
+        //ssv.rotateX(PApplet.radians(rot));
+        //ssv.rotateY(PApplet.radians(rot));
+        ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
+        ssv.fill(255, 255, 0);
+        float colour5 = PApplet.map(sp4, 0, 3.9f, sp4, 70);
+        ssv.stroke(colour5, 255, 255);
+        ssv.strokeWeight(3);
+        ssv.triangle(600 * ssv.smoothedAmplitude, sp4, sp4, sp4, sp4, ssv.smoothedAmplitude * 100);
+        ssv.popMatrix();
+        rot += 50;
+    }
+
+
+    for(float sp5 = 0; sp5 < 5; sp5++)
+    {
+        ssv.camera(0, 0, 200, 0, 0, 0, 1, 0, 0);
+        ssv.pushMatrix();
+        //ssv.rotateX(PApplet.radians(rot));
+        //ssv.rotateY(PApplet.radians(rot));
+        ssv.rotateZ(PApplet.radians(rot)); // spins around like a circle
+        ssv.fill(255, 255, 0);
+        float colour3 = PApplet.map(sp5, 0, 3.9f, sp5, 70);
+        ssv.stroke(colour3, 255, 255);
+        ssv.strokeWeight(3);
+        ssv.triangle(-600 * ssv.smoothedAmplitude, sp5, sp5, sp5, sp5, ssv.smoothedAmplitude * 100);
+        ssv.popMatrix();
+        rot += 50;
+    }
+}
 ```
+
 ## Visual 3
-In the 3rd Visual, I have only used one 3D shape within a For Loop because it represents the buildup for the next drop of the song.
+In the 3rd Visual, I have only used one 3D shape within a For Loop because it represents the buildup for the next drop of the song.As you can see from the For Loop from below, there is 5 spheres with different colours. The name of this visual is "SphereDimension" since its a space only containing spheres. After creating the "SphereDimension", it is influenced by the Russian Dolls where there is another doll decreasing in a smaller size inside another doll and so on.
 ```Java
 public void render()
 {
@@ -86,14 +162,18 @@ public void render()
     }
 }
 ```
+
+
 ## Visual 4
 ```Java
 ```
+
 
 # What I am most proud of in the assignment
 What I am most proud of in the assignment is the 1st Visual (SunSphere) and the 4th Visual (RadiantSpikeMachine). 
 
 The 1st Visual relates to the lyrics at the beginning of the song. Since, the 4th Visual relates to the title of the song, I created a spiky looking machine with two tubes connecting to the machine, one at the top and one at the bottom. I also combined the 2nd Visual with the 4th Visual to make it look as if lights were beaming out of the machine.
+
 
 # Screenshots of the 4 Visuals
 
