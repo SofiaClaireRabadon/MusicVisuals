@@ -240,8 +240,8 @@ The 1st Visual relates to the lyrics at the beginning of the song. Since, the 4t
 
 # Music Visualization Youtube Video
 
-Youtube Link:
+Youtube Link: https://www.youtube.com/watch?v=q9dnLUhOlIg
 
-[![Youtube] ] (https://www.youtube.com/watch?v=q9dnLUhOlIg)
+(![Image](images/MUSICVISUALISERPROJECT.png))
 
 
